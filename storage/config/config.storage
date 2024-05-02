@@ -1,0 +1,7 @@
+#------------------------------------------------------------------------------
+# Mgmt network (elevate interface boot priority to 1; set when PXE booting)
+
+# Assign network interfaces to networks
+NET_IF_0="static 10.10.0.41 1"
+# Public network (select network, IP address configured manually)
+NET_IF_1="manual 10.10.1.0"
