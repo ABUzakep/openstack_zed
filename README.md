@@ -1,7 +1,7 @@
 # openstack-zed
 
 
-Hello devops , these are the scrips developed by "https://github.com/Sangwan70"
+Hello devops , these are the scripts developed by "https://github.com/Sangwan70"
 I will made some change to make the installation smoother
 
 
