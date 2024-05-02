@@ -1,4 +1,28 @@
 # openstack-zed
+
+
+Hello devops , these are the scrips developed by "https://github.com/Sangwan70"
+I will made some change to make the installation smoother
+
+
+The main issue u are going to face in this deployment was "your host not in network management " 
+if you are facing the issue plz change the ip maually in every script.
+
+DO THE DEPLOYMENT IN 3 SEPARATE VMS 
+1 FOR CONTROLLER
+1 FOR COMPUTE
+1 FOR STORAGE
+
+change the vm1 hostname to controller
+change the vm2 hostname to compute
+change the vm3 hostname to storage
+ADD THE IP OF THREE MACHINES IN et/hosts IN EVERY MACHINES
+
+
+
+
+
+
 ```
 ------------+--------------------------+--------------------------+------------
             |                          |                          |
@@ -31,8 +55,22 @@ ssh-copy-id storage
 ```
 ```
 git clone https://github.com/Sangwan70/openstack-zed.git
+
+OR
+
+https://github.com/ABUzakep/openstack_zed.git
+
 ```
 ```
+
+
+YOU CAN START INSTALLATION of controller in vm 1  BY cd/openstack_zed/controller/ubuntu/
+there is a PRE_DONWLOAD.SH SCRIPT , execute thats first
+then u can see cd/openstack_zed/controller/config  , under these files many config files are there plzs change the ip address with your ip
+go through every files like, adminopenrc.sh , host,openstack etc in every Directory and change ip and hostname.
+
+
+
 cd scripts
 stack@controller:~/scripts$ ./pre-download.sh
 ```
